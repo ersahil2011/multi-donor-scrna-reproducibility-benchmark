@@ -1,0 +1,8 @@
+"metric","calculation","preferred_direction","interpretation_constraint"
+"ARI","Agreement between each workflow clustering and the retained full-data RPCA resolution-0.6 partition.","Higher","Agreement measure; not independent biological ground truth."
+"NMI","Normalized mutual information between each workflow clustering and the retained full-data RPCA partition.","Higher","Agreement measure; not independent biological ground truth."
+"Biological ASW","Mean silhouette width for marker-supported biological labels using 3,000 identically sampled cells.","Higher","Assesses preservation of broad marker-supported populations."
+"Scaled median iLISI","Entropy-weighted local inverse Simpson index using perplexity 30 and 3 x perplexity nearest neighbours; median scaled to the interval 0-1 for five donors.","Higher","Assesses local donor mixing."
+"kBET rejection rate","Pearson chi-square donor-composition test using 50-cell neighbourhoods, alpha 0.05, 10% tested cells, and 100 repeated samples.","Lower","Assesses residual local donor-composition deviation."
+"Graph connectivity","Mean fraction of cells contained in the largest connected component within each marker-supported biological population, using a 20-nearest-neighbour graph.","Higher","Assesses within-population structural connectivity."
+"Runtime","Sequential end-to-end runtime for preprocessing, integration, neighbour-graph construction, and clustering.","Lower","Hardware- and implementation-dependent."

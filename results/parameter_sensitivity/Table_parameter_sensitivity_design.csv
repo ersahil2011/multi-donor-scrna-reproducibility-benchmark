@@ -1,0 +1,10 @@
+"parameter","value","baseline_value","is_retained_setting"
+"PCs",10,20,FALSE
+"PCs",20,20,TRUE
+"PCs",30,20,FALSE
+"HVGs",1000,2000,FALSE
+"HVGs",2000,2000,TRUE
+"HVGs",3000,2000,FALSE
+"Neighbour_k",10,20,FALSE
+"Neighbour_k",20,20,TRUE
+"Neighbour_k",30,20,FALSE

@@ -1,0 +1,2 @@
+"mean_agreement","sd_agreement","mean_macro_F1","sd_macro_F1","mean_ARI","sd_ARI","mean_NMI","sd_NMI","minimum_populations_recovered","maximum_populations_recovered"
+0.916874191229331,0.0125721510757212,0.932060869659037,0.00910065480484799,0.770889342785327,0.0337255850941944,0.78019335520347,0.0205529952879237,5,5

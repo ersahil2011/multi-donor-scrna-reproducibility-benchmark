@@ -1,0 +1,44 @@
+MATCHED-SIZE UNBALANCED DONOR CONTROL
+ =======================================
+
+Iterations per sampling design: 50
+Cells per iteration: 6955 
+
+UNBALANCED SAMPLING DESIGN
+               donor available_cells original_proportion unrounded_target target_cells
+    GSM7868582_HC002            1391          0.03226630         224.4121          225
+    GSM7868583_HC004           13266          0.30772443        2140.2234         2140
+  GSM7868584_HCBX003            2226          0.05163535         359.1239          359
+ GSM7868585_HCBXN001           22421          0.52008815        3617.2131         3617
+ GSM7868586_HCBXN005            3806          0.08828578         614.0276          614
+ matched_sample_proportion
+                0.03235083
+                0.30769231
+                0.05161754
+                0.52005751
+                0.08828181
+
+DESCRIPTIVE COMPARISON
+         sampling_design iterations mean_ARI sd_ARI median_ARI mean_NMI sd_NMI median_NMI
+          Donor-balanced         50   0.5943 0.0205     0.5922   0.7296 0.0112     0.7286
+ Matched-size unbalanced         50   0.5808 0.0314     0.5772   0.6926 0.0194     0.6904
+ mean_clusters sd_clusters median_clusters minimum_clusters maximum_clusters
+         14.52        0.99              15               13               17
+         11.18        0.80              11               10               14
+
+STATISTICAL COMPARISON
+             metric balanced_mean unbalanced_mean mean_difference Welch_CI95_lower
+                ARI      0.594328        0.580818         0.01351      0.002973942
+                NMI      0.729588        0.692608         0.03698      0.030666486
+ Clusters recovered     14.520000       11.180000         3.34000      2.981512076
+ Welch_CI95_upper Welch_p_value Wilcoxon_p_value cliffs_delta effect_magnitude
+       0.02404606  1.258746e-02     1.728818e-03       0.3640           Medium
+       0.04329351  8.252585e-19     1.044918e-13       0.8632            Large
+       3.69848792  4.836206e-33     5.488588e-18       0.9872            Large
+ BH_adjusted_Wilcoxon_p_value BH_adjusted_Welch_p_value
+                 1.728818e-03              1.258746e-02
+                 1.567377e-13              1.237888e-18
+                 1.646576e-17              1.450862e-32
+
+INTERPRETATION
+Both sampling designs contained exactly 6955 cells per iteration. Donor-balanced sampling produced higher ARI and NMI agreement with the full-data reference and recovered more clusters than proportional unbalanced sampling. Therefore, the balanced-analysis results cannot be explained only by reducing the total number of cells; donor representation also affected clustering preservation.

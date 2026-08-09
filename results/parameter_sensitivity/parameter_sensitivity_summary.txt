@@ -1,0 +1,43 @@
+PARAMETER SENSITIVITY ANALYSIS
+ ==============================
+
+Retained configuration:
+ - Highly variable genes: 2000
+ - Principal components: 20
+ - Neighbour k: 20
+ - Clustering resolution: 0.6
+
+ALL PARAMETER RESULTS
+   parameter value HVGs PCs neighbour_k clusters_recovered ARI_vs_retained_solution
+        HVGs  1000 1000  20          20                 17                0.6620890
+        HVGs  2000 2000  20          20                 18                1.0000000
+        HVGs  3000 3000  20          20                 19                0.7066816
+         PCs    10 2000  10          20                 16                0.6401973
+         PCs    20 2000  20          20                 18                1.0000000
+         PCs    30 2000  30          20                 19                0.6752462
+ Neighbour_k    10 2000  20          10                 20                0.7837195
+ Neighbour_k    20 2000  20          20                 18                1.0000000
+ Neighbour_k    30 2000  20          30                 16                0.7404541
+ NMI_vs_retained_solution runtime_seconds is_retained_setting
+                0.7514496        162.9533               FALSE
+                1.0000000              NA                TRUE
+                0.7902853        228.1825               FALSE
+                0.7540530         53.0380               FALSE
+                1.0000000         45.6290                TRUE
+                0.7835537         44.2740               FALSE
+                0.8390336         21.8370               FALSE
+                1.0000000         45.3290                TRUE
+                0.8248810         68.3140               FALSE
+
+ALTERNATIVE-SETTING ROBUSTNESS
+   parameter alternative_values minimum_ARI maximum_ARI minimum_NMI maximum_NMI minimum_clusters
+        HVGs         1000, 3000      0.6621      0.7067      0.7514      0.7903               17
+         PCs             10, 30      0.6402      0.6752      0.7541      0.7836               16
+ Neighbour_k             10, 30      0.7405      0.7837      0.8249      0.8390               16
+ maximum_clusters
+               19
+               19
+               20
+
+INTERPRETATION
+The retained parameter setting has an agreement value of 1 by definition because it is the retained reference solution; this is not treated as independent evidence of superiority. Nearby alternative settings retained moderate-to-high clustering agreement, with ARI values from 0.6402 to 0.7837 and NMI values from 0.7514 to 0.8390. Cluster counts varied from 16 to 20. The selected values of 2000 HVGs, 20 PCs, and k = 20 represent intermediate settings that recovered 18 clusters, whereas smaller or larger settings produced moderate merging or fragmentation. Thus, broad cellular structure remained reproducible, although fine-grained cluster partitioning remained parameter-sensitive.

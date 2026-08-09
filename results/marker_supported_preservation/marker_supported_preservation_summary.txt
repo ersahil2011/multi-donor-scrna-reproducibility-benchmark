@@ -1,0 +1,39 @@
+MARKER-SUPPORTED CELL-POPULATION PRESERVATION
+================================================
+
+Method:
+Existing cell-level results from 50 donor-balanced RPCA reruns were re-evaluated using the marker-supported full-data annotations.
+No RPCA rerun or reclustering was performed during this recalculation.
+
+Iterations: 50
+Cells per iteration: 6,955
+Cells per donor: 1,391
+Marker-supported populations: 5
+
+Overall preservation summary:
+ mean_agreement sd_agreement mean_macro_F1 sd_macro_F1  mean_ARI     sd_ARI  mean_NMI   sd_NMI
+      0.9168742   0.01257215     0.9320609 0.009100655 0.7708893 0.03372559 0.7801934 0.020553
+ minimum_populations_recovered maximum_populations_recovered
+                             5                             5
+
+Population-specific preservation summary:
+ marker_supported_population mean_precision sd_precision mean_recall   sd_recall   mean_F1
+           Endothelial cells      0.9189953  0.050966656   0.9384589 0.063467185 0.9252930
+    Fibroblast/stromal cells      0.8878204  0.104746054   0.8282768 0.123998948 0.8423875
+    Mural/perivascular cells      0.9707866  0.013407231   0.9244009 0.015282556 0.9468622
+               Myeloid cells      0.9558267  0.008028198   0.9729863 0.014546860 0.9642577
+                     T cells      0.9906617  0.005096592   0.9725510 0.007396007 0.9815039
+       sd_F1 minimum_F1 maximum_F1
+ 0.013514339  0.9014306  0.9681979
+ 0.033065521  0.7683014  0.9282971
+ 0.007350391  0.9242958  0.9604044
+ 0.008097027  0.9405797  0.9809457
+ 0.004682958  0.9713322  0.9893238
+
+Full-data population distribution:
+ marker_supported_reference number_of_cells percentage_of_total_cells
+          Endothelial cells           21407                     49.66
+   Fibroblast/stromal cells           13933                     32.32
+   Mural/perivascular cells            3962                      9.19
+                    T cells            2288                      5.31
+              Myeloid cells            1520                      3.53

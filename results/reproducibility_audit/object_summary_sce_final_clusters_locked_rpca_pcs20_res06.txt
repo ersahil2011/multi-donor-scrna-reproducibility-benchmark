@@ -1,0 +1,277 @@
+OBJECT FILE
+===========
+sce_final_clusters_locked_rpca_pcs20_res06.rds 
+
+OBJECT CLASS
+============
+[1] "Seurat"
+attr(,"package")
+[1] "SeuratObject"
+
+OBJECT DIMENSIONS
+=================
+[1] 21877 43110
+
+OBJECT TYPE
+===========
+Seurat object
+
+ASSAYS AVAILABLE
+================
+[1] "RNA"
+
+DEFAULT ASSAY
+=============
+[1] "RNA"
+
+REDUCTIONS AVAILABLE
+====================
+[1] "pca"             "integrated.rpca" "umap.rpca"       "integrated.pca" 
+
+NUMBER OF FEATURES AND CELLS
+============================
+Features: 21877 
+Cells: 43110 
+
+METADATA COLUMNS
+================
+ [1] "orig.ident"      "nCount_RNA"      "nFeature_RNA"    "sample_id"      
+ [5] "percent.mt"      "percent.ribo"    "percent.hb"      "RNA_snn_res.0.5"
+ [9] "seurat_clusters" "RNA_snn_res.0.4" "res_0_2"         "res_0_4"        
+[13] "res_0_6"         "res_0_8"         "res_1"           "RNA_snn_res.0.2"
+[17] "RNA_snn_res.0.6" "RNA_snn_res.0.8" "RNA_snn_res.1"   "cluster_final"  
+
+POTENTIAL SAMPLE OR GROUP METADATA COLUMNS
+==========================================
+[1] "orig.ident" "sample_id" 
+
+VALUE COUNTS FOR: orig.ident 
+
+GSE246416 
+    43110 
+
+VALUE COUNTS FOR: sample_id 
+
+   GSM7868582_HC002    GSM7868583_HC004  GSM7868584_HCBX003 GSM7868585_HCBXN001 
+               1391               13266                2226               22421 
+GSM7868586_HCBXN005 
+               3806 
+
+POTENTIAL CLUSTER OR RESOLUTION METADATA COLUMNS
+================================================
+[1] "RNA_snn_res.0.5" "seurat_clusters" "RNA_snn_res.0.4" "RNA_snn_res.0.2"
+[5] "RNA_snn_res.0.6" "RNA_snn_res.0.8" "RNA_snn_res.1"   "cluster_final"  
+
+VALUE COUNTS FOR: RNA_snn_res.0.5 
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+8234 7152 5480 4168 3856 2291 2190 2168 2121 1954 1412 1234  332  194  126   96   68 
+  17 
+  34 
+
+VALUE COUNTS FOR: seurat_clusters 
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+7229 4904 3987 3804 3612 3188 2836 2297 2119 1986 1362 1350 1263 1001  789  452  413 
+  17   18   19   20 
+ 219  169   69   61 
+
+VALUE COUNTS FOR: RNA_snn_res.0.4 
+
+    0     1     2     3     4     5     6     7     8     9    10    11    12    13 
+10500  7635  6002  4080  3551  2839  2117  2116  1983  1451   397   205   166    68 
+
+VALUE COUNTS FOR: RNA_snn_res.0.2 
+
+    0     1     2     3     4     5     6     7     8     9 
+15583 11503  3993  3896  2282  2112  2020  1448   205    68 
+
+VALUE COUNTS FOR: RNA_snn_res.0.6 
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+7455 4687 4524 4512 4127 3172 2533 2293 2142 2120 1979 1356 1263  406  209  168   95 
+  17 
+  69 
+
+VALUE COUNTS FOR: RNA_snn_res.0.8 
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+7534 4792 3987 3795 3721 3529 3500 2288 2119 2115 2111 1245 1001  452  410  214  168 
+  17   18 
+  69   60 
+
+VALUE COUNTS FOR: RNA_snn_res.1 
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+7229 4904 3987 3804 3612 3188 2836 2297 2119 1986 1362 1350 1263 1001  789  452  413 
+  17   18   19   20 
+ 219  169   69   61 
+
+VALUE COUNTS FOR: cluster_final 
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+7455 4687 4524 4512 4127 3172 2533 2293 2142 2120 1979 1356 1263  406  209  168   95 
+  17 
+  69 
+
+ACTIVE IDENTITY CLASSES
+=======================
+ [1] "0"  "1"  "2"  "3"  "4"  "5"  "6"  "7"  "8"  "9"  "10" "11" "12" "13" "14" "15"
+[17] "16" "17"
+
+ACTIVE IDENTITY COUNTS
+======================
+
+   0    1    2    3    4    5    6    7    8    9   10   11   12   13   14   15   16 
+7455 4687 4524 4512 4127 3172 2533 2293 2142 2120 1979 1356 1263  406  209  168   95 
+  17 
+  69 
+
+RECORDED SEURAT COMMANDS
+========================
+[1] "NormalizeData.RNA"                 "FindVariableFeatures.RNA"         
+[3] "ScaleData.RNA"                     "RunPCA.RNA"                       
+[5] "RunUMAP.RNA.integrated.rpca"       "FindNeighbors.RNA.integrated.rpca"
+[7] "FindClusters"                     
+
+---------------------------------------------
+COMMAND: NormalizeData.RNA 
+Command: NormalizeData(sce, verbose = FALSE)
+Time: 2025-09-07 00:40:34.812222
+assay : RNA 
+normalization.method : LogNormalize 
+scale.factor : 10000 
+margin : 1 
+verbose : FALSE 
+
+---------------------------------------------
+COMMAND: FindVariableFeatures.RNA 
+Command: FindVariableFeatures(sce, nfeatures = 2000, selection.method = "vst",     verbose = FALSE)
+Time: 2025-09-07 00:40:41.899319
+assay : RNA 
+selection.method : vst 
+loess.span : 0.3 
+clip.max : auto 
+num.bin : 20 
+binning.method : equal_width 
+nfeatures : 2000 
+mean.cutoff : 0.1 8 
+dispersion.cutoff : 1 Inf 
+verbose : FALSE 
+
+---------------------------------------------
+COMMAND: ScaleData.RNA 
+Command: ScaleData(sce, verbose = FALSE)
+Time: 2025-09-07 00:40:44.787861
+assay : RNA 
+model.use : linear 
+use.umi : FALSE 
+do.scale : TRUE 
+do.center : TRUE 
+scale.max : 10 
+block.size : 1000 
+min.cells.to.block : 3000 
+verbose : FALSE 
+
+---------------------------------------------
+COMMAND: RunPCA.RNA 
+Command: RunPCA(sce, reduction = "integrated.rpca", npcs = 50,     reduction.name = "integrated.pca", verbose = FALSE)
+Time: 2025-09-07 16:07:04.14896
+assay : RNA 
+npcs : 50 
+rev.pca : FALSE 
+weight.by.var : TRUE 
+verbose : FALSE 
+ndims.print : 1 2 3 4 5 
+nfeatures.print : 30 
+reduction.name : integrated.pca 
+reduction.key : integrated.rpca 
+seed.use : 42 
+
+---------------------------------------------
+COMMAND: RunUMAP.RNA.integrated.rpca 
+Command: RunUMAP(sce, reduction = "integrated.rpca", dims = dims_use,     reduction.name = "umap.rpca", verbose = FALSE)
+Time: 2025-09-07 16:10:43.107709
+dims : 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+reduction : integrated.rpca 
+assay : RNA 
+slot : data 
+umap.method : uwot 
+return.model : FALSE 
+n.neighbors : 30 
+n.components : 2 
+metric : cosine 
+learning.rate : 1 
+min.dist : 0.3 
+spread : 1 
+set.op.mix.ratio : 1 
+local.connectivity : 1 
+repulsion.strength : 1 
+negative.sample.rate : 5 
+uwot.sgd : FALSE 
+seed.use : 42 
+angular.rp.forest : FALSE 
+densmap : FALSE 
+dens.lambda : 2 
+dens.frac : 0.3 
+dens.var.shift : 0.1 
+verbose : FALSE 
+reduction.name : umap.rpca 
+
+---------------------------------------------
+COMMAND: FindNeighbors.RNA.integrated.rpca 
+Command: FindNeighbors(sce, reduction = "integrated.rpca", dims = dims_use,     k.param = 20, verbose = FALSE)
+Time: 2025-09-07 16:17:43.441794
+reduction : integrated.rpca 
+dims : 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 
+assay : RNA 
+k.param : 20 
+return.neighbor : FALSE 
+compute.SNN : TRUE 
+prune.SNN : 0.06666667 
+nn.method : annoy 
+n.trees : 50 
+annoy.metric : euclidean 
+nn.eps : 0 
+verbose : FALSE 
+do.plot : FALSE 
+graph.name : RNA_nn RNA_snn 
+l2.norm : FALSE 
+cache.index : FALSE 
+
+---------------------------------------------
+COMMAND: FindClusters 
+Command: FindClusters(sce, algorithm = 3, resolution = r, verbose = FALSE)
+Time: 2025-09-07 16:31:31.826983
+graph.name : RNA_snn 
+cluster.name : RNA_snn_res.1 
+modularity.fxn : 1 
+resolution : 1 
+algorithm : 3 
+n.start : 10 
+n.iter : 10 
+random.seed : 0 
+group.singletons : TRUE 
+verbose : FALSE 
+
+ASSAY LAYERS AND RAW COUNT AVAILABILITY
+=======================================
+
+---------------------------------------------
+ASSAY: RNA 
+Available layers:
+ [1] "counts.GSM7868582_HC002"    "counts.GSM7868583_HC004"   
+ [3] "counts.GSM7868584_HCBX003"  "counts.GSM7868585_HCBXN001"
+ [5] "counts.GSM7868586_HCBXN005" "data.GSM7868582_HC002"     
+ [7] "data.GSM7868583_HC004"      "data.GSM7868584_HCBX003"   
+ [9] "data.GSM7868585_HCBXN001"   "data.GSM7868586_HCBXN005"  
+[11] "scale.data"                
+Detected counts-related layers:
+[1] "counts.GSM7868582_HC002"    "counts.GSM7868583_HC004"   
+[3] "counts.GSM7868584_HCBX003"  "counts.GSM7868585_HCBXN001"
+[5] "counts.GSM7868586_HCBXN005"
+Dimension of layer 'counts.GSM7868582_HC002': 21877 x 1391
+Dimension of layer 'counts.GSM7868583_HC004': 21877 x 13266
+Dimension of layer 'counts.GSM7868584_HCBX003': 21877 x 2226
+Dimension of layer 'counts.GSM7868585_HCBXN001': 21877 x 22421
+Dimension of layer 'counts.GSM7868586_HCBXN005': 21877 x 3806

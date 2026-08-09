@@ -1,0 +1,4 @@
+"Metric","Mean","SD","Median","Q1","Q3","Minimum","Maximum"
+"ARI versus full-data reference",0.5943,0.0205,0.5922,0.5819,0.603,0.5441,0.648
+"NMI versus full-data reference",0.7296,0.0112,0.7286,0.7211,0.7377,0.7023,0.76
+"Balanced clusters recovered",14.52,0.9947,15,14,15,13,17

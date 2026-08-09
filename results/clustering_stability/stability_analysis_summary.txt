@@ -1,0 +1,28 @@
+QUANTITATIVE CLUSTERING STABILITY ANALYSIS
+==========================================
+
+Object file used: sce_final_clusters_locked_rpca_pcs20_res06.rds 
+Number of cells: 43110 
+Number of features: 21877 
+Reference resolution: 0.6
+Reference clusters: 18 
+
+RESOLUTION-BASED STABILITY RESULTS
+----------------------------------
+  resolution metadata_column number_of_clusters ARI_vs_res_0.6 NMI_vs_res_0.6
+1        0.2 RNA_snn_res.0.2                 10         0.4866         0.6581
+2        0.4 RNA_snn_res.0.4                 14         0.6620         0.7829
+3        0.5 RNA_snn_res.0.5                 18         0.6676         0.7731
+4        0.6 RNA_snn_res.0.6                 18         1.0000         1.0000
+5        0.8 RNA_snn_res.0.8                 19         0.8800         0.9045
+6        1.0   RNA_snn_res.1                 21         0.8210         0.8631
+
+SILHOUETTE QUALITY SUMMARY
+--------------------------
+  selected_resolution  reduction_used dimensions_used sampled_cells seed
+1                 0.6 integrated.rpca              20          5000   42
+  mean_silhouette_width median_silhouette_width
+1                0.1425                    0.17
+
+Interpretation note:
+ARI and NMI quantify agreement of each resolution-specific partition with the selected 0.6 clustering solution. Silhouette quality was estimated on a reproducible random subset of cells from the RPCA-based embedding to avoid excessive memory consumption.

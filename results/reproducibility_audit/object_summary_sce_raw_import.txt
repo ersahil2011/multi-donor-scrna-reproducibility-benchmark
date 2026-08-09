@@ -1,0 +1,95 @@
+OBJECT FILE
+===========
+sce_raw_import.rds 
+
+OBJECT CLASS
+============
+[1] "Seurat"
+attr(,"package")
+[1] "SeuratObject"
+
+OBJECT DIMENSIONS
+=================
+[1] 21877 63421
+
+OBJECT TYPE
+===========
+Seurat object
+
+ASSAYS AVAILABLE
+================
+[1] "RNA"
+
+DEFAULT ASSAY
+=============
+[1] "RNA"
+
+REDUCTIONS AVAILABLE
+====================
+NULL
+
+NUMBER OF FEATURES AND CELLS
+============================
+Features: 21877 
+Cells: 63421 
+
+METADATA COLUMNS
+================
+[1] "orig.ident"   "nCount_RNA"   "nFeature_RNA" "sample_id"    "percent.mt"  
+
+POTENTIAL SAMPLE OR GROUP METADATA COLUMNS
+==========================================
+[1] "orig.ident" "sample_id" 
+
+VALUE COUNTS FOR: orig.ident 
+
+GSE246416 
+    63421 
+
+VALUE COUNTS FOR: sample_id 
+
+   GSM7868582_HC002    GSM7868583_HC004  GSM7868584_HCBX003 GSM7868585_HCBXN001 
+               2234               19456                3100               33643 
+GSM7868586_HCBXN005 
+               4988 
+
+POTENTIAL CLUSTER OR RESOLUTION METADATA COLUMNS
+================================================
+character(0)
+
+ACTIVE IDENTITY CLASSES
+=======================
+[1] "GSE246416"
+
+ACTIVE IDENTITY COUNTS
+======================
+
+GSE246416 
+    63421 
+
+RECORDED SEURAT COMMANDS
+========================
+NULL
+
+ASSAY LAYERS AND RAW COUNT AVAILABILITY
+=======================================
+
+---------------------------------------------
+ASSAY: RNA 
+Available layers:
+[1] "counts.1.SeuratProject.SeuratProject.SeuratProject"
+[2] "counts.2.SeuratProject.SeuratProject.SeuratProject"
+[3] "counts.GSE246416.SeuratProject.SeuratProject"      
+[4] "counts.GSE246416.SeuratProject"                    
+[5] "counts.GSE246416"                                  
+Detected counts-related layers:
+[1] "counts.1.SeuratProject.SeuratProject.SeuratProject"
+[2] "counts.2.SeuratProject.SeuratProject.SeuratProject"
+[3] "counts.GSE246416.SeuratProject.SeuratProject"      
+[4] "counts.GSE246416.SeuratProject"                    
+[5] "counts.GSE246416"                                  
+Dimension of layer 'counts.1.SeuratProject.SeuratProject.SeuratProject': 18621 x 2234
+Dimension of layer 'counts.2.SeuratProject.SeuratProject.SeuratProject': 20438 x 19456
+Dimension of layer 'counts.GSE246416.SeuratProject.SeuratProject': 18949 x 3100
+Dimension of layer 'counts.GSE246416.SeuratProject': 19971 x 33643
+Dimension of layer 'counts.GSE246416': 17935 x 4988

@@ -1,0 +1,4 @@
+"parameter","alternative_values","minimum_ARI","maximum_ARI","minimum_NMI","maximum_NMI","minimum_clusters","maximum_clusters"
+"HVGs","1000, 3000",0.6621,0.7067,0.7514,0.7903,17,19
+"PCs","10, 30",0.6402,0.6752,0.7541,0.7836,16,19
+"Neighbour_k","10, 30",0.7405,0.7837,0.8249,0.839,16,20

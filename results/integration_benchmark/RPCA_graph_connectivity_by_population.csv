@@ -1,0 +1,6 @@
+"biological_label","number_of_cells","graph_connectivity","workflow"
+"Endothelial cells",3371,0.999703352121032,"RPCA"
+"Fibroblast/stromal cells",1698,0.998822143698469,"RPCA"
+"Mural/perivascular cells",617,1,"RPCA"
+"Myeloid cells",690,0.959420289855072,"RPCA"
+"T cells",579,0.972366148531952,"RPCA"

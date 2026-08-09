@@ -1,0 +1,44 @@
+EXPANDED INTEGRATION BENCHMARK SUMMARY
+======================================
+
+Benchmark design
+----------------
+Four workflows were evaluated on the identical  donor-balanced subset of 6,955 cells.
+All workflows used 2,000 HVGs, 20 PCs,  neighbour k = 20, resolution = 0.6, and seed 2026.
+
+Complete results
+----------------
+         workflow clusters_recovered ARI_vs_full_RPCA_reference NMI_vs_full_RPCA_reference
+ Unintegrated PCA                 15                  0.4692603                  0.6755975
+              CCA                 13                  0.5446784                  0.6988094
+             RPCA                 14                  0.5812245                  0.7230997
+          Harmony                 14                  0.5870589                  0.7119255
+ mean_cluster_silhouette mean_biological_silhouette runtime_seconds mean_iLISI median_iLISI
+               0.2364912                  0.3370662        8.971657   1.649241     1.414323
+               0.3355353                  0.4194440       82.264478   2.653071     2.664409
+               0.3254974                  0.4039680       41.338986   2.720473     2.795802
+               0.2374130                  0.3780833       10.519000   2.660636     2.715857
+ scaled_median_iLISI kBET_rejection_rate kBET_CI95_lower kBET_CI95_upper graph_connectivity
+           0.1035807           0.9969828       0.9928161       1.0000000          0.9884747
+           0.4161023           0.8744540       0.8526940       0.8973779          0.9841810
+           0.4489505           0.8687213       0.8491379       0.8864943          0.9860624
+           0.4289643           0.9171983       0.8994253       0.9361710          0.9908517
+ weighted_graph_connectivity kBET_acceptance_rate
+                   0.9913731          0.003017241
+                   0.9920920          0.125545977
+                   0.9932423          0.131278736
+                   0.9942487          0.082801724
+
+Interpretation
+--------------
+All integrated workflows improved donor mixing relative  to unintegrated PCA while retaining high graph connectivity.
+RPCA produced the highest scaled median iLISI (0.4490),  the lowest kBET rejection rate among integrated workflows  (0.8687), and the highest NMI agreement (0.7231).
+Harmony produced the highest ARI agreement (0.5871),  the highest graph connectivity (0.9909), and the shortest  runtime among integrated workflows (10.5 seconds).
+CCA produced the highest biological silhouette value  (0.4194) but required the longest runtime (82.3 seconds).
+No method dominated every metric. RPCA was retained as the  primary workflow because it provided the strongest overall  balance between donor mixing, clustering agreement, biological  structure preservation, and computational cost.
+
+Interpretive limitations
+------------------------
+ARI and NMI quantify agreement with the retained full-data  RPCA partition and must not be interpreted as accuracy against  independent biological ground truth.
+The high kBET rejection rates indicate that residual donor  structure remains after integration and should be reported  rather than concealed.
+These findings apply to the five healthy synovial donors  evaluated here and do not establish universal superiority  across tissues, diseases, platforms, or populations.

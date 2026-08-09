@@ -1,0 +1,2 @@
+"workflow","mean_iLISI","median_iLISI","scaled_median_iLISI","kBET_rejection_rate","kBET_CI95_lower","kBET_CI95_upper","graph_connectivity","weighted_graph_connectivity"
+"Unintegrated PCA",1.64924065929094,1.41432261362775,0.103580653406937,0.99698275862069,0.992816091954023,1,0.988474728819986,0.99137311286844

@@ -1,0 +1,6 @@
+"biological_label","number_of_cells","graph_connectivity"
+"Endothelial cells",3371,0.996736873331356
+"Fibroblast/stromal cells",1698,0.988221436984688
+"Mural/perivascular cells",617,1
+"Myeloid cells",690,0.960869565217391
+"T cells",579,0.996545768566494

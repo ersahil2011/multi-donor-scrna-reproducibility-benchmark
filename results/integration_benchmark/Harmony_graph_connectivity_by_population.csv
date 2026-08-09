@@ -1,0 +1,6 @@
+"biological_label","number_of_cells","graph_connectivity","workflow"
+"Endothelial cells",3371,0.996736873331356,"Harmony"
+"Fibroblast/stromal cells",1698,1,"Harmony"
+"Mural/perivascular cells",617,0.99837925445705,"Harmony"
+"Myeloid cells",690,0.960869565217391,"Harmony"
+"T cells",579,0.998272884283247,"Harmony"

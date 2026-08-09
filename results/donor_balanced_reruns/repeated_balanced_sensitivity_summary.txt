@@ -1,0 +1,40 @@
+REPEATED DONOR-BALANCED SENSITIVITY ANALYSIS
+============================================
+
+Input post-filtering object: sce_after_doublet_removal.rds 
+Full-data reference object: sce_final_clusters_locked_rpca_pcs20_res06.rds 
+Donor metadata column: sample_id 
+Number of planned iterations: 50 
+Number of completed iterations: 50 
+Number of failed iterations: 0 
+Cells sampled per donor per iteration: 1391 
+Total balanced cells per iteration: 6955 
+Reference resolution: 0.6
+Total runtime in minutes: 37.83 
+
+FULL-DATA DONOR DISTRIBUTION
+----------------------------
+
+   GSM7868582_HC002    GSM7868583_HC004  GSM7868584_HCBX003 GSM7868585_HCBXN001 GSM7868586_HCBXN005 
+               1391               13266                2226               22421                3806 
+
+METRIC SUMMARY ACROSS COMPLETED ITERATIONS
+------------------------------------------
+                          Metric    Mean     SD  Median      Q1      Q3 Minimum Maximum
+1 ARI versus full-data reference  0.5943 0.0205  0.5922  0.5819  0.6030  0.5441   0.648
+2 NMI versus full-data reference  0.7296 0.0112  0.7286  0.7211  0.7377  0.7023   0.760
+3    Balanced clusters recovered 14.5200 0.9947 15.0000 14.0000 15.0000 13.0000  17.000
+
+BALANCED CLUSTER-COUNT FREQUENCY
+--------------------------------
+  balanced_clusters_recovered number_of_iterations percentage_of_completed_iterations
+1                          13                    9                                 18
+2                          14                   14                                 28
+3                          15                   20                                 40
+4                          16                    6                                 12
+5                          17                    1                                  2
+
+Proportion of completed balanced iterations recovering exactly 18 clusters: 0 
+
+Interpretation note:
+Each iteration independently balanced donor-wise cell representation by sampling the same number of cells from each donor and rebuilding the RPCA-based clustering workflow. ARI and NMI quantify agreement between the balanced-rerun cluster assignment and the retained full-data resolution-0.6 cluster assignment for the same cells. Results should be interpreted as a sensitivity assessment of clustering structure to donor representation, not as an independent biological validation of the annotations.

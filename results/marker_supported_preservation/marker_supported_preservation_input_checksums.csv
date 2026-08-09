@@ -1,0 +1,4 @@
+"input_name","input_path","MD5_checksum"
+"cell_cluster_map","cell_labels_final.csv","412b626db9ad85e0feea817023b19528"
+"balanced_cell_results","balanced_celltype_preservation_outputs/cell_level_label_preservation_all_iterations.csv","17e01fe1dc3c3d9afa07d20748095397"
+"marker_annotation_map","reviewer_revision_outputs/10_marker_annotation_validation/TableS2_marker_supported_annotation_review.csv","1d0c9b2dde13a2aa517ecc2c569968b5"

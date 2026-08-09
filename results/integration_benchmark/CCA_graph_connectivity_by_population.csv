@@ -1,0 +1,6 @@
+"biological_label","number_of_cells","graph_connectivity","workflow"
+"Endothelial cells",3371,0.999406704242065,"CCA"
+"Fibroblast/stromal cells",1698,0.997644287396938,"CCA"
+"Mural/perivascular cells",617,0.993517017828201,"CCA"
+"Myeloid cells",690,0.957971014492754,"CCA"
+"T cells",579,0.972366148531952,"CCA"

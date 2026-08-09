@@ -1,0 +1,26 @@
+"sample_id","marker_supported_label","number_of_cells","total_cells_in_donor","percentage_within_donor"
+"GSM7868582_HC002","Endothelial cells",721,1391,51.83
+"GSM7868582_HC002","Fibroblast/stromal cells",125,1391,8.99
+"GSM7868582_HC002","Mural/perivascular cells",261,1391,18.76
+"GSM7868582_HC002","T cells",214,1391,15.38
+"GSM7868582_HC002","Myeloid cells",70,1391,5.03
+"GSM7868583_HC004","Endothelial cells",8330,13266,62.79
+"GSM7868583_HC004","Fibroblast/stromal cells",1934,13266,14.58
+"GSM7868583_HC004","Mural/perivascular cells",1303,13266,9.82
+"GSM7868583_HC004","T cells",1340,13266,10.1
+"GSM7868583_HC004","Myeloid cells",359,13266,2.71
+"GSM7868584_HCBX003","Endothelial cells",520,2226,23.36
+"GSM7868584_HCBX003","Fibroblast/stromal cells",566,2226,25.43
+"GSM7868584_HCBX003","Mural/perivascular cells",75,2226,3.37
+"GSM7868584_HCBX003","T cells",278,2226,12.49
+"GSM7868584_HCBX003","Myeloid cells",787,2226,35.35
+"GSM7868585_HCBXN001","Endothelial cells",9429,22421,42.05
+"GSM7868585_HCBXN001","Fibroblast/stromal cells",10327,22421,46.06
+"GSM7868585_HCBXN001","Mural/perivascular cells",2250,22421,10.04
+"GSM7868585_HCBXN001","T cells",347,22421,1.55
+"GSM7868585_HCBXN001","Myeloid cells",68,22421,0.3
+"GSM7868586_HCBXN005","Endothelial cells",2407,3806,63.24
+"GSM7868586_HCBXN005","Fibroblast/stromal cells",981,3806,25.78
+"GSM7868586_HCBXN005","Mural/perivascular cells",73,3806,1.92
+"GSM7868586_HCBXN005","T cells",109,3806,2.86
+"GSM7868586_HCBXN005","Myeloid cells",236,3806,6.2
